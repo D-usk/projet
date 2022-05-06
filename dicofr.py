@@ -18,6 +18,10 @@ def recherche(dico):
     for index in dico:
         if index[0] == start and len(index) == int(longueur) and lettres in index:
             mots_cherches.append(index)
+        if start == "" and len(index) == int(longueur) and lettres in index:
+            mots_cherches.append(index)
+
+
 
 
 recherche(mots_fr)
